@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+    
+     <TextView
+         android:id="@+id/fileAnchor"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="File:"
+         android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/file_location"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Choose File"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/fileAnchor"/>
+    
+    <Button
+        android:id="@+id/chooseButton"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+       	android:layout_centerInParent="true"
+        android:layout_below="@+id/file_location"
+        android:text="Pick File" />
+    
+    <EditText
+        android:id="@+id/userFileName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="File Name"
+        android:layout_below="@+id/chooseButton"
+       	android:layout_centerInParent="true"/>
+    
+    <TextView
+         android:id="@+id/durationDisclaimer"
+         android:layout_width="100dp"
+         android:layout_height="wrap_content"
+         android:text="Store file for"
+         android:layout_below="@+id/userFileName"
+         android:layout_alignLeft="@+id/userFileName"/>
+  	
+  	<Spinner 
+  	    android:id="@+id/durationValue"
+  	    android:layout_width="60dp"
+  	    android:layout_height="wrap_content"
+  	    android:layout_below="@+id/userFileName"
+  	    android:layout_toRightOf="@+id/durationDisclaimer"/>
+	
+	<Spinner 
+  	    android:id="@+id/durationUnit"
+  	    android:layout_width="fill_parent"
+  	    android:layout_height="wrap_content"
+  	    android:layout_below="@+id/userFileName"
+  	    android:layout_toRightOf="@+id/durationValue"/>
+   
+    
+    <Button
+        android:id="@+id/toUploadButton"
+       	android:layout_width="96dp"
+        android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+        android:layout_below="@+id/durationUnit"
+        android:text="Upload" />
+
+</RelativeLayout>

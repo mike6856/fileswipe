@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">fileswipe</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="chooser_title">Complete action with</string>
+    <string name="file_select">File Select</string>
+    
+    <string-array name="duration_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    
+    <string-array name="duration_units">
+        <item>day</item>
+        <item>hours</item>
+    </string-array>
+
+</resources>
